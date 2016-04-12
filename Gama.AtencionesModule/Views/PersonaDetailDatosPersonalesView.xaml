@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Gama.AtencionesModule.Views.PersonaDetailDatosPersonalesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gama.AtencionesModule.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="959.589" d:DesignWidth="282.534">
+    <GroupBox Header="Datos Perseonales">
+        <ScrollViewer>
+            <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                <StackPanel>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button 
+                                            Margin="{StaticResource GlobalMargin}"
+                                            MaxHeight="64"
+                                            Content="{DynamicResource AtencionesModuleIcons.Customer}"/>
+
+                        <StackPanel Grid.Column="1">
+                            <Label Margin="{StaticResource GlobalMargin}">Dni</Label>
+                            <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Dni}"
+                                                     MinWidth="80"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Nombre</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Nombre}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Fecha de Nacimiento</Label>
+                    <DatePicker Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.FechaDeNacimiento}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Email</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Email}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Teléfono</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Teléfono}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Dirección</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Dirección}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Nacionalidad</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Nacionalidad}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Identidad Sexual</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.IdentidadSexual}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Orientación Sexual</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.OrientacionSexual}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Nivel de Estudios</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Nombre}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Ocupación</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Ocupacion}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Facebook</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Facebook}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Twitter</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.Twitter}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Cómo conoció a Gamá</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.ComoConocioAGama}"/>
+
+                    <Label Margin="{StaticResource GlobalMargin}">Vía de acceso a Gamá</Label>
+                    <TextBox Margin="{StaticResource GlobalMargin}" Text="{Binding Persona.ViaDeAccesoAGama}"/>
+
+
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </GroupBox>
+</UserControl>

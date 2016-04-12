@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Gama.AtencionesModule">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Green.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
+
+        <ResourceDictionary Source="Assets/AtencionesModuleIcons.xaml"/>
+        <ResourceDictionary>
+            <Thickness x:Key="GlobalMargin">4</Thickness>
+            <Thickness x:Key="GlobalMarginNoLeft">0,4,4,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoTop">4,0,4,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoRight">4,4,0,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoBottom">4,4,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginNoHorizontal">0,4,0,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoVertical">4,0,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginBulletList">12,0,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginWithDoubleTop">4,8,4,4</Thickness>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

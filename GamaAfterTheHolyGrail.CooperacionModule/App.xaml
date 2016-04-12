@@ -1,0 +1,10 @@
+﻿<Application x:Class="GamaAfterTheHolyGrail.CooperacionModule.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:wrapper="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule.Wrapper"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule">
+    <Application.Resources>
+        <ResourceDictionary Source="Resources.xaml"/>
+    </Application.Resources>
+</Application>

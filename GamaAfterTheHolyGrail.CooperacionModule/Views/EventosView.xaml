@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="GamaAfterTheHolyGrail.CooperacionModule.Views.EventosView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:designData="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule.DesignTimeData"
+             xmlns:local="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule.Views"
+             mc:Ignorable="d" d:DesignHeight="470.493" >
+    <d:DataContext>
+        <designData:ContentViewModelDTT/>
+    </d:DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" SharedSizeGroup="A"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Eventos" Grid.RowSpan="2">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <ContentControl Content="{Binding}" FontSize="17" HorizontalAlignment="Left"
+                                                VerticalAlignment="Center"
+                                                FontWeight="DemiBold"/>
+                        <StackPanel Grid.Column="1"
+                        Orientation="Horizontal" HorizontalAlignment="Right" >
+                            <Button Background="Transparent" Margin="{StaticResource GlobalMargin}"
+                            BorderThickness="0">
+                                <Image Source="{StaticResource NewFileIcon}"/>
+                            </Button>
+                            <Button Background="Transparent" Margin="{StaticResource GlobalMargin}"
+                            BorderThickness="0">
+                                <Image Source="{StaticResource EditFileIcon}"/>
+                            </Button>
+                            <Button Background="Transparent" Margin="{StaticResource GlobalMargin}"
+                            BorderThickness="0">
+                                <Image Source="{StaticResource GarbageIcon}"/>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <ListView BorderThickness="0" 
+                             ItemsSource="{Binding Proyecto.Eventos}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition MaxWidth="175" Width="175"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Image
+                                        Opacity="0.8" Margin="{StaticResource GlobalMargin}"
+                                        HorizontalAlignment="Left"
+                                        MaxWidth="36"
+                                        Source="{StaticResource EventIcon}"/>
+                                    <StackPanel Grid.Column="1" 
+                                                HorizontalAlignment="Stretch"
+                                                Orientation="Vertical">
+                                        <TextBlock Margin="{StaticResource GlobalMargin}" FontSize="10" Grid.Column="1"
+                                                   Text="{Binding Titulo}" 
+                                                   TextWrapping="WrapWithOverflow" />
+                                        <TextBlock Margin="{StaticResource GlobalMargin}" FontSize="10" 
+                                                   Text="{Binding Fecha}" 
+                                                   TextWrapping="WrapWithOverflow"/>
+
+                                    </StackPanel>
+                                    <!--
+                                    <Line Grid.Row="1" Grid.ColumnSpan="2"
+                                          StrokeThickness="0.5" Fill="DarkGray" Stroke="Black" X2="150" /> 
+                                    -->
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </ScrollViewer>
+        </GroupBox>
+    </Grid>
+</UserControl>

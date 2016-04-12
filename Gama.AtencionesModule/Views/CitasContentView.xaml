@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="Gama.AtencionesModule.Views.CitasContentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:designData="clr-namespace:Gama.AtencionesModule.DesignTimeData"
+             xmlns:local="clr-namespace:Gama.AtencionesModule.Views"
+             xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="475.5" d:DesignWidth="1147.788">
+    <d:DataContext>
+        <designData:CitasViewModel_DTT/>
+    </d:DataContext>
+    <UserControl.Resources>
+        <Thickness x:Key="ElPadding">10</Thickness>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <DataGridLength x:Key="MaxWidthForColumns">150</DataGridLength>
+    </UserControl.Resources>
+    <Grid>
+        <DataGrid
+            ItemsSource="{Binding Citas}"
+                   AutoGenerateColumns="False" SelectionMode="Single" SelectionUnit="Cell" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" FontSize="16">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="LUNES" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[0].Inicio.Date}"
+                                Padding="{StaticResource ElPadding}">
+                                <Grid>
+                                    <Button Content="Nuevo"
+                                            Command="{Binding DummyCommand}"/>
+                                </Grid>
+                            </GroupBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="MARTES" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Nuevo"
+                                            Command="{Binding DummyCommand}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="MIÉRCOLES" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[2].Inicio.Date}"
+                                Content="{Binding Dias[2].Inicio}"
+                                    Padding="{StaticResource ElPadding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="JUEVES" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[3].Inicio.Date}"
+                                Content="{Binding Dias[3].Inicio}"
+                                    Padding="{StaticResource ElPadding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="VIERNES" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[4].Inicio.Date}"
+                                Content="{Binding Dias[4].Inicio}"
+                                    Padding="{StaticResource ElPadding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="SÁBADO" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[5].Inicio.Date}"
+                                Content="{Binding Dias[5].Inicio}"
+                                    Padding="{StaticResource ElPadding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="DOMINGO" Width="{StaticResource MaxWidthForColumns}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <GroupBox 
+                                Header="{Binding Dias[6].Inicio.Date}"
+                                Content="{Binding Dias[6].Inicio}"
+                                    Padding="{StaticResource ElPadding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Green.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
+
+        <ResourceDictionary Source="Assets/IconButtons.xaml"/>
+        <ResourceDictionary>
+            <Thickness x:Key="GlobalMargin">4</Thickness>
+            <Thickness x:Key="GlobalMarginNoLeft">0,4,4,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoTop">4,0,4,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoRight">4,4,0,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoBottom">4,4,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginNoHorizontal">0,4,0,4</Thickness>
+            <Thickness x:Key="GlobalMarginNoVertical">4,0,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginBulletList">12,0,4,0</Thickness>
+            <Thickness x:Key="GlobalMarginWithDoubleTop">4,8,4,4</Thickness>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+    <LinearGradientBrush x:Key="ListBoxBackgroundColor" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+        <GradientStop Color="#FFF39444"/>
+        <GradientStop Color="#FFE6E2D7" Offset="0.888"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GlobalBackgroundColor" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF59CBCB"/>
+        <GradientStop Color="#FFBD883B" Offset="1"/>
+    </LinearGradientBrush>
+
+    <BitmapImage x:Key="EventIcon">
+        pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/shape-lightning-32.png
+    </BitmapImage>
+    <BitmapImage x:Key="GarbageIcon">
+        pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/garbage.png
+    </BitmapImage>
+    <BitmapImage x:Key="NewFileIcon">
+        pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/item-new.png
+    </BitmapImage>
+    <BitmapImage x:Key="EditFileIcon">
+        pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/file-edit.png
+    </BitmapImage>
+    <BitmapImage x:Key="UserProfile32Icon">
+        pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/user-profile-32.png
+    </BitmapImage>
+</ResourceDictionary>

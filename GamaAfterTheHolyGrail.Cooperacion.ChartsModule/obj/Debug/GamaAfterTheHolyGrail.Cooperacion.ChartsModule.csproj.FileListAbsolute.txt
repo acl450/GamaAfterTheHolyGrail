@@ -1,0 +1,17 @@
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\bin\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.exe.config
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\bin\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.exe
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\bin\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.pdb
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\bin\Debug\LiveCharts.dll
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\bin\Debug\De.TorstenMandelkow.MetroChart.pdb
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.csprojResolveAssemblyReference.cache
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\MainWindow.g.cs
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\App.g.cs
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule_MarkupCompile.cache
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule_MarkupCompile.lref
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\MainWindow.baml
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.g.resources
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.Properties.Resources.resources
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.csproj.GenerateResource.Cache
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.exe
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\GamaAfterTheHolyGrail.Cooperacion.ChartsModule\obj\Debug\GamaAfterTheHolyGrail.Cooperacion.ChartsModule.pdb

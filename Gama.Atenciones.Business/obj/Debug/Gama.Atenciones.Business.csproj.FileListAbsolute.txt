@@ -1,0 +1,4 @@
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\Gama.Atenciones.Business\bin\Debug\Gama.Atenciones.Business.dll
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\Gama.Atenciones.Business\bin\Debug\Gama.Atenciones.Business.pdb
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\Gama.Atenciones.Business\obj\Debug\Gama.Atenciones.Business.dll
+C:\Users\acl450\Documents\Visual Studio 2015\Projects\GamaAfterTheHolyGrail\Gama.Atenciones.Business\obj\Debug\Gama.Atenciones.Business.pdb

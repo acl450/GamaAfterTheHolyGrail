@@ -1,0 +1,45 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:GamaAfterTheHolyGrail"
+             xmlns:cooperacion="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule;assembly=GamaAfterTheHolyGrail.CooperacionModule" xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="GamaAfterTheHolyGrail.App"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Resources.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Gama.AtencionesModule;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Viewbox x:Key="Icon.Application">
+                <Grid>
+                    <Grid Name="backgroundGrid" Width="128" Height="128" Visibility="Collapsed" />
+                    <Path Data="M6.6419983,4.2392289L6.7430115,4.2392289 6.8430176,4.2392289C7.2460022,4.2392289 8.4530029,4.4412209 9.2579956,5.950195 9.4599915,6.0512062 9.7610168,6.5541879 9.5599976,8.1641423L9.6610107,8.2651535C9.7610168,8.3651577,9.7610168,8.4661385,9.7610168,8.5661427L9.4599915,9.6731163C9.3590088,9.8751389 9.3590088,9.8751389 9.2579956,9.9751126 9.15802,10.579106 8.9559937,11.283103 8.7550049,11.585099L8.7550049,12.592068 8.9559937,12.592068 8.9559937,13.397046 9.8619995,13.799046C9.0570068,14.101042 8.4530029,14.302027 8.2520142,14.302027 7.2460022,14.403039 6.4410095,15.812009 6.3399963,16.114004L6.2390137,16.416 0,16.416 0.40301514,15.409032 4.730011,13.397046 4.730011,12.592068 4.9309998,12.592068 4.9309998,11.585099C4.730011,11.283103 4.5289917,10.579106 4.428009,9.9751126 4.3269958,9.9751126 4.3269958,9.8751389 4.2270203,9.7741276L4.026001,8.5661427 4.026001,8.2651535 4.1260071,8.1641423C3.9250183,6.5541879 4.2270203,6.0512062 4.3269958,5.950195 5.132019,4.4412209 6.2390137,4.2392289 6.6419983,4.2392289z M25.459991,3.9382397C25.459991,3.9382397 26.36499,3.9382397 26.768005,4.4412209 26.768005,4.4412209 27.070007,4.7432171 27.572998,4.8432213 27.572998,4.8432213 29.082001,5.6481987 28.076019,9.070131 28.076019,9.070131 28.779999,10.177105 27.673004,11.082118 27.673004,11.082118 27.572998,11.988076 26.868011,12.893057 26.868011,12.893057 26.768005,12.994069 26.666992,13.09505 26.666992,13.699042 26.868011,14.403039 27.371002,14.805039 27.371002,14.805039 30.59201,14.90602 31.29599,15.309027 31.597992,15.510012 32,16.716989 32,16.716989L25.15802,16.716989 25.057007,16.716989 24.755005,16.114004C24.653992,15.812009 24.050995,14.705035 23.246002,14.403039 23.548004,14.000062 23.64801,13.49705 23.64801,13.09505 23.548004,12.994069 23.548004,12.893057 23.446991,12.793084 23.446991,12.793084 22.641998,11.787091 22.641998,10.982113 22.641998,10.982113 21.535004,10.27711 22.239014,8.9691502L22.139008,8.5661427C22.44101,8.667154,21.032013,3.9382397,25.459991,3.9382397z M15.918835,3.4962572E-05C19.138575,0.014696233 19.421997,4.6422364 19.421997,4.6422364 19.522003,8.3651577 20.628998,9.9751126 20.628998,9.9751126 20.22702,10.780121 17.610016,10.478125 17.610016,10.478125 17.610016,11.485095 18.013,12.290072 18.013,12.290072 19.421997,13.900057 22.944,14.805039 22.944,14.805039 23.748993,14.805039 24.453003,16.314989 24.453003,16.314989L15.699005,16.314989 15.597992,16.314989 6.8430176,16.314989C6.8430176,16.314989 7.5480042,14.805039 8.3529968,14.805039 8.3529968,14.805039 11.774017,13.900057 13.28302,12.290072 13.28302,12.290072 13.686005,11.485095 13.686005,10.478125 13.686005,10.478125 11.170013,10.780121 10.666992,9.9751126 10.666992,9.9751126 11.673004,8.3651577 11.875,4.6422364 11.774017,4.7432171 12.076019,0.013326166 15.29599,0.013326322L15.597992,0.013326322C15.708055,0.0038887837,15.814973,-0.00043834252,15.918835,3.4962572E-05z" Stretch="Uniform" Fill="#FFFCFCFC" Width="68" Height="68" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <TransformGroup.Children>
+                                    <RotateTransform Angle="180" />
+                                    <ScaleTransform ScaleX="-1" ScaleY="-1" />
+                                </TransformGroup.Children>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+            </Viewbox>
+            <Style x:Key="TabItemStyle1" TargetType="{x:Type TabItem}">
+                <Setter Property="Header" Value="{Binding DataContext.Title}"/>
+                <Setter Property="HeaderTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" Margin="{StaticResource GlobalMargin}" 
+        						Custom:TextBoxHelper.ClearTextButton="True"
+        						FontSize="14" 
+        						Background="Transparent"/>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+           
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

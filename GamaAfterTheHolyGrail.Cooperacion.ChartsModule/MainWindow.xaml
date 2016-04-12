@@ -1,0 +1,65 @@
+﻿<Window x:Class="GamaAfterTheHolyGrail.Cooperacion.ChartsModule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GamaAfterTheHolyGrail.Cooperacion.ChartsModule"
+        xmlns:lvc="clr-namespace:LiveCharts;assembly=LiveCharts"
+        xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="394.349" Width="964.897">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <d:DataContext>
+        <local:MainWindowViewModel/>
+    </d:DataContext>
+    <Window.Resources>
+        <Style x:Key="MinimalChartStyle" TargetType="chart:ChartBase">
+            <Setter Property="MinWidth" Value="200"/>
+            <Setter Property="MinHeight" Value="200"/>
+        </Style>
+        <chart:ResourceDictionaryCollection x:Key="MyColorPalette">
+            <ResourceDictionary>
+                <SolidColorBrush x:Key="Brush1" Color="Purple" />
+            </ResourceDictionary>
+            <ResourceDictionary>
+                <SolidColorBrush x:Key="Brush2" Color="Gray" />
+            </ResourceDictionary>
+            <ResourceDictionary>
+                <SolidColorBrush x:Key="Brush3" Color="SteelBlue" />
+            </ResourceDictionary>
+            <ResourceDictionary>
+                <SolidColorBrush x:Key="Brush4" Color="LightCoral" />
+            </ResourceDictionary>
+        </chart:ResourceDictionaryCollection>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <chart:PieChart
+            Margin="0"
+            ChartTitle="{x:Null}"
+            ChartSubTitle="{x:Null}"
+            InnerRadiusRatio="5"
+            ChartTitleVisibility="Collapsed"
+            Palette="{StaticResource MyColorPalette}"
+            SelectedItem="{Binding SelectedItem}" >
+            <chart:PieChart.Series>
+                <chart:ChartSeries
+                    SeriesTitle="Errors"
+                    DisplayMember="Category"
+                    ContextMenu="{Binding contextMenu}"
+                    ValueMember="Number"
+                    ItemsSource="{Binding Errors}"/>
+            </chart:PieChart.Series>
+        </chart:PieChart>
+        <lvc:PieChart x:Name="myChart"
+                          Grid.Column="1" Series="{Binding TheChart.Series}"
+                      Margin="20"
+                      LegendLocation="Right">
+        </lvc:PieChart>
+    </Grid>
+</Window>

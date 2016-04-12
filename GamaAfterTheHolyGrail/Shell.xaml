@@ -1,0 +1,48 @@
+﻿<metro:MetroWindow x:Class="GamaAfterTheHolyGrail.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:GamaAfterTheHolyGrail"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:core="clr-namespace:GamaAfterTheHolyGrail.Core;assembly=GamaAfterTheHolyGrail.Core"
+        mc:Ignorable="d"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        BorderThickness="1"
+        BorderBrush="DarkGray"
+        Icon="pack://application:,,,/GamaAfterTheHolyGrail.CooperacionModule;component/Assets/Team-01.png"
+        Title="{Binding Title}"  WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="292" Width="708">
+    <metro:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <Image Source="{Binding}"/>
+        </DataTemplate>
+    </metro:MetroWindow.IconTemplate>
+    <metro:MetroWindow.Resources>
+        
+    </metro:MetroWindow.Resources>
+    <Grid Margin="{StaticResource GlobalMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" LastChildFill="True">
+            <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.PanelSwitcherRegion}"
+                            DockPanel.Dock="Left"/>
+            <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ToolbarRegion}"
+                            VerticalAlignment="Center" VerticalContentAlignment="Center" DockPanel.Dock="Right"/>
+            <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.SearchBoxRegion}"
+                            VerticalAlignment="Center" VerticalContentAlignment="Center" />
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" LastChildFill="True">
+            <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}">
+                <!--<metro:MetroTabControl Grid.Row="1" Margin="{StaticResource GlobalMarginNoTop}"
+                    prism:RegionManager.RegionName="{x:Static core:RegionNames.TabContentRegion}" 
+                    metro:TabControlHelper.IsUnderlined="True"
+                    metro:TabControlHelper.Transition="Down"/>-->
+            </ContentControl>
+        </DockPanel>
+    </Grid>
+</metro:MetroWindow>

@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="GamaAfterTheHolyGrail.CooperacionModule.Views.ToolbarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GamaAfterTheHolyGrail.CooperacionModule.Views"
+             mc:Ignorable="d" d:DesignWidth="450.5" Height="81.054">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="BottonNewControlTemplate" TargetType="{x:Type ButtonBase}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="Nuevo Proyecto" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                <ContentControl Content="{DynamicResource IconButtons.Add}" Grid.RowSpan="1" Height="Auto"  MaxHeight="35" Width="Auto" Foreground="Black"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True"/>
+                <Trigger Property="IsMouseOver" Value="True"/>
+                <Trigger Property="IsPressed" Value="True"/>
+                <Trigger Property="ToggleButton.IsChecked" Value="True"/>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="EditProjectControlTemplate" TargetType="{x:Type ButtonBase}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="Editar Proyecto" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                <ContentControl Content="{DynamicResource IconButtons.Edit}" Grid.RowSpan="1" Height="Auto" MaxHeight="35" Width="Auto" Foreground="Black"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True"/>
+                <Trigger Property="IsMouseOver" Value="True"/>
+                <Trigger Property="IsPressed" Value="True"/>
+                <Trigger Property="ToggleButton.IsChecked" Value="True"/>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonAllControlTemplate" TargetType="{x:Type ButtonBase}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="Mostrar Todos" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                <ContentControl Content="{DynamicResource IconButtons.All}" 
+                                Grid.RowSpan="1" 
+                                Height="Auto"  MaxHeight="35"
+                                Width="Auto" Foreground="Black"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True"/>
+                <Trigger Property="IsMouseOver" Value="True"/>
+                <Trigger Property="IsPressed" Value="True"/>
+                <Trigger Property="ToggleButton.IsChecked" Value="True"/>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonDeleteControlTemplate" TargetType="{x:Type ButtonBase}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="Borrar Proyecto" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <ContentControl Content="{DynamicResource IconButtons.Delete}" 
+                                Grid.RowSpan="1" 
+                                Height="Auto" MaxHeight="35"
+                                Width="Auto" 
+                                Foreground="Black"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True"/>
+                <Trigger Property="IsMouseOver" Value="True"/>
+                <Trigger Property="IsPressed" Value="True"/>
+                <Trigger Property="ToggleButton.IsChecked" Value="True"/>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal" >
+            <Button Template="{DynamicResource ButtonAllControlTemplate}" Margin="{StaticResource GlobalMargin}"/>
+            <Button Template="{DynamicResource BottonNewControlTemplate}" Margin="{StaticResource GlobalMargin}"/>
+            <Button Template="{DynamicResource EditProjectControlTemplate}" Margin="{StaticResource GlobalMargin}"/>
+            <Button Template="{DynamicResource ButtonDeleteControlTemplate}" Margin="{StaticResource GlobalMargin}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
